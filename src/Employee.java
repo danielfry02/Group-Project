@@ -4,18 +4,26 @@ public class Employee {
 	protected int Id;
 	protected int salary;
 	protected String level;
+	private int employeeCount;
 	
 public Employee() {
 	Name= "addName";
-	Id= 0;
+	Id= employeeCount;
 	salary= 0;
 	level= "newHire";
+	employeeCount++;
+	
 }
 	
-public Employee (String Name, int Id) {
+public Employee (String Name, int salary) {
 	this.Name=Name;
-	this.Id=Id;
+	this.salary=salary;
+	Id=employeeCount;
+	employeeCount++;
 }
 
+public void getName () {
+	
+}
 
 }
